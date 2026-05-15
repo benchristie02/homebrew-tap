@@ -1,13 +1,14 @@
 class Rask < Formula
   desc "Internal CLI for Rask Australia (YouTube chapter generation, etc.)"
   homepage "https://github.com/benchristie02/rask-cli"
-  url "https://github.com/benchristie02/rask-cli/archive/refs/tags/v0.1.4.tar.gz"
-  sha256 "a2e39303761e7e9061d2ef17b50545667eb33d8bd6abc6a9da0629cec2cf3e1b"
-  version "0.1.4"
+  url "https://github.com/benchristie02/rask-cli/archive/refs/tags/v0.1.5.tar.gz"
+  sha256 "a079556c67bdbbb2158ba81be5807a9fe1508a9d802cdd1488ee1e7565b128d6"
+  version "0.1.5"
   license "MIT"
 
   depends_on "yt-dlp"
   depends_on "jq"
+  depends_on "ffmpeg"
 
   def install
     bin.install "bin/rask"
